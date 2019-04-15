@@ -1,9 +1,12 @@
 var role = []
+
 // add solution here
 
 function theBeatlesPlay(musicians, instruments) {
   for(var i=0; i<4; i++) {
-    role.push(musicians[i] + " plays " + instruments[i])
+    var x = musicians.length - 1
+    role.push(musicians[i] + " plays " + instruments[x])
+    x--;
   }
   return role;
 }
